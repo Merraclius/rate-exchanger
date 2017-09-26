@@ -1,0 +1,15 @@
+test:
+    build: ../
+    volumes:
+        - ../:/var/www/html/
+    links:
+        - testdb
+    working_dir: /var/www/html/tests
+    environment:
+        YII_ENV: 'test'
+    command: codecept run
+testdb:
+    image: mongo:3
+    container_name: testdb
+    expose:
+      - "27017"

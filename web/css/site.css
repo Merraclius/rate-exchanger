@@ -1,0 +1,67 @@
+html,
+body {
+    height: 100%;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.auth-widget-container .auth-clients {
+    margin: 0;
+    padding: 0;
+}
+
+.container.header {
+    padding: 20px 15px;
+    background-color: white;
+}
+
+.alert-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.table-hover tr:hover {
+    cursor: pointer;
+}
+
+.color-red {
+    color: red;
+}
+
+.color-green {
+    color: green;
+}
+
+.fav-rates tbody td:last-child > span {
+    opacity: 0;
+}
+
+.fav-rates tbody tr:hover td:last-child > span {
+    opacity: 1;
+}
+
+.fetched-data-container {
+    margin-top: 10px;
+}
+
+table tr td.comparison-icons {
+    text-align: center;
+}
+
+/* Copy-paste from bootstrap 3 */
+.table > tbody > tr > td.active,
+.table > tbody > tr > th.active,
+.table > tbody > tr.active > td {
+    background-color: #545454;
+    color: #fff;
+}
