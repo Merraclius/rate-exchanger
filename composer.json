@@ -15,9 +15,11 @@
     "kartik-v/yii2-icons": "@dev",
     "bower-asset/bootstrap": "~4.0.0@alpha",
     "bower-asset/angular": "1.4.*",
-    "bower-asset/angular-resource": "1.4.*"
+    "bower-asset/angular-resource": "1.4.*",
+    "ext-mongodb": "^1.2.9"
   },
   "require-dev": {
+    "heroku/heroku-buildpack-php": "*",
     "codeception/codeception": "~2.0.0",
     "yiisoft/yii2-debug": "~2.0.0",
     "yiisoft/yii2-gii": "~2.0.0",
