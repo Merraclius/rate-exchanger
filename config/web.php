@@ -2,7 +2,7 @@
 
 $config = [
     'id' => 'basic',
-    'basePath' => \DockerEnv::APP_DIR,
+    'basePath' => rtrim(\DockerEnv::APP_DIR, '/'),
     'bootstrap' => [
         'log',
         'v1'
@@ -10,7 +10,7 @@ $config = [
     'aliases' => [
         '@v1' => '@app/modules/api/v1',
     ],
-    'vendorPath' => \DockerEnv::VENDOR_DIR,
+    'vendorPath' => rtrim(\DockerEnv::VENDOR_DIR, '/'),
     'components' => [
         'cache' => [
             'class' => 'yii\caching\ApcCache',
