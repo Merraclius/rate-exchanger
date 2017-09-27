@@ -1,6 +1,6 @@
 config/local.php
 config/console-local.php
-/web/assets
+/web/assets/*
 /docker-compose.yml
 /vendor/
 /runtime/
