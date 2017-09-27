@@ -2,4 +2,9 @@
 require('../helpers/DockerEnv.php');
 \DockerEnv::init();
 $config = \DockerEnv::webConfig();
-(new yii\web\Application($config))->run();
+
+$application =(new yii\web\Application($config));
+
+\Yii::setAlias('@bower', $application->vendorPath . DIRECTORY_SEPARATOR . 'bower-asset');
+
+$application->run();

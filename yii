@@ -10,5 +10,9 @@ require(dirname(__FILE__) . 'helpers/DockerEnv.php');
 $config = \DockerEnv::consoleConfig();
 
 $application = new yii\console\Application($config);
+
+\Yii::setAlias('@bower', $application->vendorPath . DIRECTORY_SEPARATOR . 'bower-asset');
+
 $exitCode = $application->run();
+
 exit($exitCode);
