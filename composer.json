@@ -2,7 +2,7 @@
   "name": "currency-exchanger",
   "minimum-stability": "stable",
   "require": {
-    "php": ">=5.4.0",
+    "php": ">=7.0.0",
     "yiisoft/yii2": "2.0.12",
     "yiisoft/yii2-bootstrap": "~2.1.0@dev",
     "yiisoft/yii2-jui": "~2.0.0",
@@ -16,7 +16,8 @@
     "bower-asset/bootstrap": "~4.0.0@alpha",
     "bower-asset/angular": "1.4.*",
     "bower-asset/angular-resource": "1.4.*",
-    "ext-mongodb": "^1.2.9"
+    "ext-mongodb": "^1.2.9",
+    "fxp/composer-asset-plugin": "*"
   },
   "require-dev": {
     "heroku/heroku-buildpack-php": "*",
