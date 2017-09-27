@@ -126,7 +126,13 @@ class DockerEnv
      */
     public static function dbDsn($dsn = 'mongodb://db:27017/currency_exchange')
     {
-        return self::get('DB_DSN', YII_ENV_TEST ? self::TEST_DB_DSN : $dsn);
+        $dbDsn = self::get('MONGODB_URI', null);
+
+        if ($dbDsn === null) {
+            $dbDsn = self::get('DB_DSN', YII_ENV_TEST ? self::TEST_DB_DSN : $dsn);
+        }
+
+        return $dbDsn;
     }
 
     /**
