@@ -29,7 +29,7 @@
   "extra": {
     "asset-installer-paths": {
       "npm-asset-library": "/app/vendor/npm",
-      "bower-asset-library": "/app/vendor/bower"
+      "bower-asset-library": "/app/vendor/bower-asset"
     }
   },
   "scripts": {
