@@ -26,10 +26,12 @@
     "yiisoft/yii2-codeception": "~2.0.0",
     "yiisoft/yii2-faker": "~2.0.0"
   },
-  "extra": {
-    "asset-installer-paths": {
-      "npm-asset-library": "/app/vendor/npm",
-      "bower-asset-library": "/app/vendor/bower-asset"
+  "config": {
+    "fxp-asset": {
+      "installer-paths": {
+        "npm-asset-library": "/app/vendor/npm",
+        "bower-asset-library": "/app/vendor/bower"
+      }
     }
   },
   "scripts": {
