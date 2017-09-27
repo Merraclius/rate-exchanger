@@ -5,7 +5,7 @@
 defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
 defined('STDOUT') or define('STDOUT', fopen('php://stdout', 'w'));
 
-require('/var/www/html/helpers/DockerEnv.php');
+require(dirname(__FILE__) . 'helpers/DockerEnv.php');
 \DockerEnv::init();
 $config = \DockerEnv::consoleConfig();
 

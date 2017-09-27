@@ -1,10 +1,10 @@
 test:
     build: ../
     volumes:
-        - ../:/var/www/html/
+        - ../:/app/
     links:
         - testdb
-    working_dir: /var/www/html/tests
+    working_dir: /app/tests
     environment:
         YII_ENV: 'test'
     command: codecept run

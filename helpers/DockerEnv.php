@@ -10,9 +10,9 @@ use yii\helpers\ArrayHelper;
  */
 class DockerEnv
 {
-    const APP_DIR = '/var/www/html/';
-    const TEST_DIR = '/var/www/html/tests/';
-    const VENDOR_DIR = '/var/www/html/vendor/';
+    const APP_DIR = '/app/';
+    const TEST_DIR = '/app/tests/';
+    const VENDOR_DIR = '/app/vendor/';
 
     const TEST_DB_DSN = "mongodb://db:27017/test_currency_exchange";
     const TEST_DB_USER = 'test';

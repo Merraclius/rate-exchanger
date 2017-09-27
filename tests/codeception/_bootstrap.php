@@ -2,13 +2,14 @@
 /**
  * This file is run before all codeception tests
  */
+
+require(realpath(dirname(dirname(dirname(__FILE__)))) . '/helpers/DockerEnv.php');
+\DockerEnv::init();
+
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 
 defined('YII_TEST_ENTRY_URL') or define('YII_TEST_ENTRY_URL', parse_url(\Codeception\Configuration::config()['config']['test_entry_url'], PHP_URL_PATH));
-defined('YII_TEST_ENTRY_FILE') or define('YII_TEST_ENTRY_FILE', '/var/www/html/web/index.php');
-
-require('/var/www/html/helpers/DockerEnv.php');
-\DockerEnv::init();
+defined('YII_TEST_ENTRY_FILE') or define('YII_TEST_ENTRY_FILE', \DockerEnv::APP_DIR . 'web/index.php');
 
 $_SERVER['SCRIPT_FILENAME'] = YII_TEST_ENTRY_FILE;
 $_SERVER['SCRIPT_NAME'] = YII_TEST_ENTRY_URL;

@@ -2,7 +2,7 @@
 
 $config = [
     'id' => 'basic',
-    'basePath' => '/var/www/html',
+    'basePath' => \DockerEnv::APP_DIR,
     'bootstrap' => [
         'log',
         'v1'
@@ -10,7 +10,7 @@ $config = [
     'aliases' => [
         '@v1' => '@app/modules/api/v1',
     ],
-    'vendorPath' => '/var/www/html/vendor',
+    'vendorPath' => \DockerEnv::VENDOR_DIR,
     'components' => [
         'cache' => [
             'class' => 'yii\caching\ApcCache',
@@ -78,7 +78,7 @@ $config = [
             'class' => 'v1\Module'
         ]
     ],
-    'params' => require('/var/www/html/config/params.php'),
+    'params' => require('params.php'),
 ];
 
 if (YII_ENV_DEV) {

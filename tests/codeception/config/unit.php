@@ -3,6 +3,6 @@
  * This is the configuration for the Yii app during unit tests
  */
 return yii\helpers\ArrayHelper::merge(
-    require('/var/www/html/config/web.php'),
-    require('/var/www/html/tests/codeception/config/config.php')
+    require(\DockerEnv::APP_DIR . 'config/web.php'),
+    require(\DockerEnv::TEST_DIR . 'codeception/config/config.php')
 );

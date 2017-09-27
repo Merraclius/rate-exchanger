@@ -28,11 +28,11 @@
   },
   "extra": {
     "asset-installer-paths": {
-      "npm-asset-library": "/var/www/html/vendor/npm",
-      "bower-asset-library": "/var/www/html/vendor/bower"
+      "npm-asset-library": "/app/vendor/npm",
+      "bower-asset-library": "/app/vendor/bower"
     }
   },
   "scripts": {
-    "post-install-cmd": "sh post-install-cmd.sh"
+    "post-install-cmd": "sh ./post-install-cmd.sh"
   }
 }
