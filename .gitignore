@@ -3,7 +3,6 @@ config/console-local.php
 /docker-compose.yml
 /vendor/
 runtime/
-composer.lock
 .env
 
 *.swp

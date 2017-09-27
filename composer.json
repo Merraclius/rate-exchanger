@@ -31,5 +31,8 @@
       "npm-asset-library": "/var/www/html/vendor/npm",
       "bower-asset-library": "/var/www/html/vendor/bower"
     }
+  },
+  "scripts": {
+    "post-install-cmd": "sh post-install-cmd.sh"
   }
 }
