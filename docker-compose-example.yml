@@ -32,7 +32,9 @@ services:
 
     # For FPM/HHVM based image:
     #nginx:
-    #    build: ./nginx
+    #    build:
+    #       context: .
+    #       dockerfile: Dockerfile
     #    restart: always
     #    ports:
     #        - "8080:80"
